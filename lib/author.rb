@@ -15,11 +15,11 @@ class Author
   
   def add_post_by_title(name)
     post = Post.new(name)
-    song.artist = self
+    post.author = self
   end
   
-  def self.song_count
-    Song.all.length
+  def self.post_count
+    Post.all.length
   end
   
 end

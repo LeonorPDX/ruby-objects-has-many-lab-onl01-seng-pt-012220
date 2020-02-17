@@ -6,7 +6,7 @@ class Author
   end
   
   def add_post(post)
-    postt.author = self
+    post.author = self
   end
   
   def posts

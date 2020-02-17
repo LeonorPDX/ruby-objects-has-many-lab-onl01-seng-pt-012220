@@ -5,8 +5,8 @@ class Author
     @name = name
   end
   
-  def add_post(post)
-    post.author = self
+  def add_post(postt)
+    postt.author = self
   end
   
   def posts

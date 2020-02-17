@@ -10,11 +10,11 @@ class Author
   end
   
   def posts
-    Song.all.select {|song| song.artist == self}
+    Posts.all.select {|post| post.author == self}
   end
   
-  def add_song_by_name(name)
-    song = Song.new(name)
+  def add_post_by_title(name)
+    post = Post.new(name)
     song.artist = self
   end
   
